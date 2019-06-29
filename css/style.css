@@ -1,0 +1,289 @@
+body {
+    width: 1280px;
+    margin: 0;
+}
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none; 
+}
+
+.ht {
+    display: block;
+    font-size: 30px;
+}
+
+header {
+  background-color: #445162;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.ho {	
+    display: block;
+    font-size: 60px;	
+    color:#FFFFFF;
+    text-align: left;
+    line-height: 115px;
+}
+
+header ul {
+    padding: 0px 252px 51px 0px;
+}
+
+header ul li::before {
+    content: url("../img/icon 1.1.png");
+    width: 25px;
+    height: 19px;
+    margin-right: 11px;
+}
+
+header ul li {
+    font-size: 20px; /*размер шрифта*/
+    line-height: 36px; /*межстрочный интервал*/
+    font-weight: 400; /*насыщенность шрифта*/
+    color: #ffffff;
+}
+
+header img {
+    float: right;
+    width: 470px;
+    height: 215px;
+}
+
+.about {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.abproduct {
+    width: 653px;
+    text-align: left;
+    margin: 49px 100px 94.5px 0px;
+}
+
+.ht {
+    line-height: 36px;
+    font-weight: 400;
+    color:#445161;
+    padding-bottom: 30px;
+}
+
+.abproduct p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5C5C5C;
+    padding-bottom: 20px;
+}
+
+.about video {
+    float: left;
+    width: 431px; 
+    height: 246px;
+}
+
+.pluses {
+    background-color: #F5F5F5;
+    padding: 49.5px 0px 16px 50px;
+}
+
+.pluses .ht {
+    color:#445161;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 29px;
+}
+
+.spisok {
+    display: flex;
+    justify-content: left;  
+}
+
+.pluses ul li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    padding: 0px 22px 35px 0px;
+    position: relative;
+}
+
+.pluses ul li::before {
+    content: url("../img/icon 2.1.1.png");
+    background-color: #445161;
+    width: 32px;
+    height: 32px;
+    top: 7px;
+    left: -37px;
+    text-align: center; /*выравниваю крестик по центру фона*/
+    line-height: 2.4; /*опускаю крестик на центр фона*/
+    position: absolute;
+
+}
+
+.scrinshots {
+    width: 100%;
+    padding: 50px;
+    display: flex; /*все элементы выстроились в одну строку*/
+    flex-wrap: wrap; /*перенос блока на новую строку*/
+    box-sizing: border-box; /*изменяет поведение блочной модели*/
+}
+
+.scrinshots .ht {
+    display: block; 
+    width: 100%; /*заголовок над всеми остаьными блоками*/
+    color:#445161;
+    font-size: 30px;
+    text-align: center;
+}
+
+.scrinshots img {
+    width: 201px;
+    height: 151px;
+    display: inline-block;
+    margin: 0 0 29px 0;
+}
+
+body > div > main > section.scrinshots > img:nth-child(6),
+body > div > main > section.scrinshots > img:nth-child(8) {
+    margin: 0;
+}
+
+.scrinshots-item {
+    width: 374px;
+    padding: 0 0 0 15px;
+}
+
+.scrinshots-item .hf {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+    padding: 0 0 15px 0;
+}
+
+.scrinshots-item p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.reviews {
+    width: 100%;
+    padding: 50px;
+    display: flex; /*все элементы выстроились в одну строку*/
+    flex-wrap: wrap; /*перенос блока на новую строку*/
+    box-sizing: border-box; /*изменяет поведение блочной модели*/
+    background-color: #F5F5F5;
+}
+
+.reviews .ht {
+    display: block; 
+    width: 100%; /*заголовок над всеми остаьными блоками*/
+    margin: 0 0 35px 0;
+    color:#445161;
+    font-size: 30px;
+    text-align: center;
+}
+
+.reviews img {
+    width: 76px;
+    height: 76px;
+    display: inline-block;
+    margin: 0 0 0 31px;
+}
+
+body > div > main > section.reviews > img:nth-child(2),
+body > div > main > section.reviews > img:nth-child(6) {
+    margin: 0;
+}
+
+.reviews-item {
+    width: 470px;
+    min-height: 65px;
+    padding: 16px; /*отступы внутри блока*/
+    margin: 0 0 24px 20px;
+    box-sizing: border-box; /*в данном случае помогает убрать лишние пиксели у бордера*/
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    position: relative; /*работаем над расположением стрелочки*/
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+body > div > main > section.reviews > div:nth-child(7),
+body > div > main > section.reviews >div:nth-child(9) {
+    margin: 0 0 0 20px;
+}
+
+.reviews-item::before {
+    content: "";
+    top: 29px;
+    left: -22px;
+    border: 13px solid transparent;
+    border-right: 10px solid #EBEBEB;
+    position: absolute; /*работаем над расположением стрелочки*/
+}
+
+.reviews-item p {
+    margin: 0; /*удаляем отступы у параграфа*/
+    font-style: italic;
+    color: #333333; 
+}
+
+.ab {
+    display: block; /*делаем элемент из строчного блочным*/
+    width: 100%; 
+    margin: 15px 0 0 0;
+    font-style: normal;
+    color: #989898;
+}
+
+.buy .hf {
+    color:#445161;
+    font-size: 30px;
+    text-align: center;
+}
+
+.buy img {
+    height: 499px;
+    width: 968px;
+    float: center;
+}
+
+.contacts {
+    background-color: #445162; 
+   }
+
+.contacts h3 {
+    font-size: 30;	
+    text-align: left;	
+    color:#FFFFFF;
+    text-align: center;
+}
+
+#ab {
+    list-style-image: url("img/skype icon.png");
+}
+
+#bc {
+    list-style-image: url("img/icq icon.png");
+}
+
+#cd {
+    list-style-image: url("img/email icon.png");
+}
+
+#de {
+    list-style-image: url("img/phone icon.png");
+}
