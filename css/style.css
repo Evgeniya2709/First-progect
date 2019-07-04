@@ -369,11 +369,11 @@ form {
     border-radius: 5px;
 }
 
-body > div > main > footer > form > input[type="text"]:nth-child(3) {
+body > div > main > div > form > input[type="text"]:nth-child(3) {
     height: 171px;
 }
 
-body > div > main > footer > form > input[type="submit"]:nth-child(4) {
+body > div > main > div > form > input[type="submit"]:nth-child(4) {
     width: 141px;
     font-weight: 600; /* Жирное начертание */
     text-transform: uppercase;
@@ -381,13 +381,14 @@ body > div > main > footer > form > input[type="submit"]:nth-child(4) {
     background: #FFFFFF;
 }
 
-body > div > footer > form > input[type="submit"]:nth-child(4):hover {
-    background: rgb(172, 178, 179);
+body > div > main > div > form > input[type="submit"]:nth-child(4):hover {
+    color: #ffffff;
+    background-color: #445161;
 }
 
 .mess {
     width: 25%;
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
     font-size: 16px;
     color: #ffffff;
@@ -413,9 +414,13 @@ body > div > footer > form > input[type="submit"]:nth-child(4):hover {
     margin: 0 6px 0 0;
 }
 
+.tel {
+    padding: 0 15px 0 0;
+}
+
 .mess a {
-    float: left;
-    text-decoration: none; /* Убираем подчёркивание */
+    width: 41px;
+    height: 40px;
 }
 
 .mess1 {
@@ -436,4 +441,11 @@ body > div > footer > form > input[type="submit"]:nth-child(4):hover {
 
 .mess5 {
     background: url(../img/mess5.png) no-repeat;
+}
+
+footer {
+    padding: 5px 498px;
+    color:#445162;
+    font-size: 12px;
+    font-weight: 500;
 }
