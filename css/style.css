@@ -27,19 +27,24 @@ header {
   background-color: #445162;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding: 50px;
 }
 
 .ho {	
     display: block;
+    line-height: 44px;
     font-size: 60px;	
     color:#FFFFFF;
     text-align: left;
-    line-height: 115px;
+    margin-bottom: 35px;
 }
 
 header ul {
-    padding: 0px 252px 51px 0px;
+    padding: 0 252px 0 0;
+}
+
+body > div > header > ul {
+    margin: 0;
 }
 
 header ul li::before {
@@ -66,20 +71,20 @@ header img {
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding: 50px;
 }
 
 .abproduct {
     width: 653px;
     text-align: left;
-    margin: 49px 100px 94.5px 0px;
+    margin: 0 100px 0 0;
 }
 
-.ht {
+.abproduct .ht {
     line-height: 36px;
     font-weight: 400;
     color:#445161;
-    padding-bottom: 30px;
+    text-align: left;
 }
 
 .abproduct p {
@@ -88,6 +93,7 @@ header img {
     font-weight: 400;
     color: #5C5C5C;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 .about video {
